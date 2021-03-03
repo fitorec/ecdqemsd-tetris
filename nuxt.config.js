@@ -27,6 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/assets/css/main.scss',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -42,5 +43,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  server: {
+    port: 9030 // default: 3000
   }
 }

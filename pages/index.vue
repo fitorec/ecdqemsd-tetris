@@ -1,10 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
+      <h1 class="title" id="titulo">
         Tetris-ECDQEMSD
       </h1>
+      <Logo :type='ficha' />
+      <select v-model="ficha" :value="0">
+        <option v-for='(v, i) in fichas' :value="i">{{ v.nombre  }}</option>
+      </select>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -28,7 +31,16 @@
 </template>
 
 <script>
-export default {}
+import fichas from '../plugins/fichas';
+
+export default {
+  data() {
+    return {
+      ficha: 1,
+      fichas
+    };
+  }
+}
 </script>
 
 <style>
