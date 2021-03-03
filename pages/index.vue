@@ -10,20 +10,20 @@
       </select>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://es.wikipedia.org/wiki/Tetris#Colores_de_los_tetriminos"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
+          class="boton-rojo"
         >
-          Documentation
+          Documentación (Teoría del Tetris)
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/fitorec/ecdqemsd-tetris"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="boton-rojo"
         >
-          GitHub
+          Código fuente
         </a>
       </div>
     </div>

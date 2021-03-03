@@ -45,18 +45,19 @@ html {
   background-color: #3b8070;
 }
 
-.button--grey {
+.boton-rojo {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid #d30000;
+  color: #FFF;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
-.button--grey:hover {
+.boton-rojo:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #d30000;
+  border: 1px solid #680000;
 }
 </style>
