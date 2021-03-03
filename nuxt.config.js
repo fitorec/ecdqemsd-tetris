@@ -4,12 +4,14 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    base: '/ecdqemsd-tetris/',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Tetris-ECDQEMSD',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
