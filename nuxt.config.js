@@ -16,7 +16,26 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Tetris ecdqemsd - El juego de la nave'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Tetris ecdqemsd - El juego de la nave',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Tetris ecdqemsd - El juego de la nave'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'http://www.canaltrans.com/estilos/v21/images/en_caso_de_que_el_mundo_se_desintegre_2021.png'
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
