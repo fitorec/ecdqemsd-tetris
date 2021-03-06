@@ -1,13 +1,21 @@
 <template>
-  <div class="container">
+  <div class="container" @keyup="revisarTeclado">
     <div>
       <h1 class="title" id="titulo">
         Tetris-ECDQEMSD
       </h1>
-      <Logo :type='ficha' />
-      <select v-model="ficha" :value="0">
-        <option v-for='(v, i) in fichas' :value="i">{{ v.nombre  }}</option>
-      </select>
+      <div class="row">
+        <div class="col">
+          <select v-model="ficha" :value="0" class="ficha-select">
+            <option v-for='(v, i) in fichas.tipos' :value="i" :key="i">
+              {{ v.nombre  }}
+            </option>
+          </select>
+        </div>
+        <div class="col">
+          <Ficha :type='ficha' />
+        </div>
+      </div>
       <div class="links">
         <a
           href="https://es.wikipedia.org/wiki/Tetris#Colores_de_los_tetriminos"
@@ -37,10 +45,22 @@ export default {
   data() {
     return {
       ficha: 1,
-      fichas
+      fichas,
+      items: [
+        { text: 'Real-Time', icon: 'mdi-clock' },
+        { text: 'Audience', icon: 'mdi-account' },
+        { text: 'Conversions', icon: 'mdi-flag' },
+      ],
     };
-  }
-}
+  },
+  methods: {
+    revisarTeclado(event) {
+      console.log(event.key);
+      console.log(event.metaKey);
+    },
+  },
+
+};
 </script>
 
 <style>
@@ -81,5 +101,8 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+.ficha-select {
+  font-size: 2rem;
 }
 </style>

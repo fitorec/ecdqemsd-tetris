@@ -1,5 +1,9 @@
 # Tetris-ECDQEMSD
 
+## Rotaciones
+
+![./explicacion.rotaciones.png](./explicacion.rotaciones.png)
+
 ## Mecánica de juego
 
 Distintos tetriminos, figuras geométricas compuestas por cuatro bloques cuadrados unidos de forma ortogonal, las cuales se generan de una zona que ocupa 5x5 bloques en el área superior de la pantalla. No hay consenso en cuanto a las dimensiones para el área del juego, variando en cada versión.20​ Sin embargo, dos filas de más arriba están ocultas al jugador.
